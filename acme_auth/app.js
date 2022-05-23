@@ -24,6 +24,14 @@ app.get("/api/auth", async (req, res, next) => {
   }
 });
 
+app.delete("/api/auth", async (res, res, next) => {
+  try {
+    res.send();
+  } catch (ex) {
+    next(ex);
+  }
+});
+
 app.use((err, req, res, next) => {
   console.log(err);
   res.status(err.status || 500).send({ error: err.message });

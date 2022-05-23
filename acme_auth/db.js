@@ -1,4 +1,5 @@
 const Sequelize = require('sequelize');
+const jwt = require("jsonwebtoken")
 const { STRING } = Sequelize;
 const config = {
   logging: false
