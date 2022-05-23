@@ -56,7 +56,7 @@ const syncAndSeed = async()=> {
   ];
   const [lucy, moe, larry] = await Promise.all(
     credentials.map( credential => User.create(credential))
-  );
+  )
   return {
     users: {
       lucy,
